@@ -1,6 +1,6 @@
 ---------------------------------------
-# PallyCon CPIX Client for Python
- This module shows the client code for CPIX communication with PallyCon KMS server in Python.
+# Doverunner CPIX Client for Python
+ This module shows the client code for CPIX communication with Doverunner KMS server in Python.
 
 
 
@@ -9,7 +9,7 @@
 
 - KMS token
 
-  - This is an API authentication token that is generated when you sign up PallyCon service.
+  - This is an API authentication token that is generated when you sign up Doverunner service.
 
 - Python 3.9+
 
@@ -39,7 +39,7 @@
  You can set the parameters of the function based on the packaging scenario you require. 
 
 ```python
-def get_content_key_info_from_pallycon_kms(self, content_id, drm_type
+def get_content_key_info_from_doverunner_kms(self, content_id, drm_type
                                                , encryption_scheme=EncryptionScheme.CENC
                                                , track_type=TrackType.ALL_TRACKS
                                                , period_index=0)
@@ -140,7 +140,7 @@ You can set multiple values using the OR(`|`) operator, such as `WIDEVINE|PLAYRE
 | pssh_payload_only (Widevine & PlayReady) | Text value of **`<cpix:ContentProtectionData>`** tag  |
 | key_uri (FairPlay)                       | Text value of **`<cpix:URIExtXKey>`** tag             |
 
-For CPIX Response, please refer to [PallyCon CPIX API Guide](https://pallycon.com/docs/ko/multidrm/packaging/cpix-api/).
+For CPIX Response, please refer to [Doverunner CPIX API Guide](https://doverunner.com/docs/en/multidrm/packaging/cpix-api/).
 
 
 
@@ -148,6 +148,6 @@ For CPIX Response, please refer to [PallyCon CPIX API Guide](https://pallycon.co
 
 ## References
 - https://dashif-documents.azurewebsites.net/Cpix/master/Cpix.html
-- https://pallycon.com/docs/en/multidrm/packaging/cpix-api/
+- https://doverunner.com/docs/en/multidrm/packaging/cpix-api/
 
 ---------------------------------------
