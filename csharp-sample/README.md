@@ -77,6 +77,8 @@ If you want to enable key rotation, you can set `key-rotation=true` to the Get p
 
 ## **Output json data format**
 
+In the code of the sample project, if you put the `{enc-token}` and `contentId` variable with values and run, you'll see the following results.
+
 The items of the output data includes all data such as hex encoded, base64 encoded, payload_only, etc. so that you can easily copy and paste it into each packaging service.
 
 - **Single-key** sample

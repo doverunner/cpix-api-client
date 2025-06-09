@@ -77,6 +77,8 @@ Originally, CPIX Responses are received in XML format, but <u>for readability, r
 
  The items of the output data includes all data such as hex encoded, base64 encoded, payload_only, etc. so that you can easily copy and paste it into each packaging service.
 
+ In the test code, if you put the `{enc-token}` and `contentId` variable with values and run, you'll see the following results.
+
 - **Single-key** sample
 
 ```json
