@@ -19,7 +19,7 @@ namespace doverunner {
 	class UrlInfomation
 	{
 	private:
-		std::string m_domain;	// ex) www.inka.co.kr
+		std::string m_domain;	// ex) www.google.com
 		std::string m_path;		// ex) /subdir/page.html
 		std::string m_protocol; // ex) http, ftp, https, etc
 		int m_port;
