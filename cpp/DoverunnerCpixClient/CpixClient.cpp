@@ -444,7 +444,7 @@ namespace doverunner {
 		return packInfo;
 	}
 
-	ContentPackagingInfo CpixClient::GetContentKeyInfoFromDoverunnerKMS(const std::string contentId
+	ContentPackagingInfo CpixClient::GetContentKeyInfoFromDoveRunnerKMS(const std::string contentId
 		, DrmType drmType, EncryptionScheme encryptionScheme, TrackType trackType, long periodIndex)
 	{
 		if (contentId.empty())

@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DoverunnerCpixClientWrapper\DoverunnerCpixClientWrapper.vcxproj" />
+    <ProjectReference Include="..\DoveRunnerCpixClientWrapper\DoveRunnerCpixClientWrapper.vcxproj" />
   </ItemGroup>
 
 </Project>

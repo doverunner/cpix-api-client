@@ -1,6 +1,6 @@
 ---------------------------------------
-# Doverunner CPIX Client for Java
- This module shows the clien code for CPIX communication with Doverunner KMS server in Java.
+# DoveRunner CPIX Client for Java
+ This module shows the clien code for CPIX communication with DoveRunner KMS server in Java.
 
 
 
@@ -9,7 +9,7 @@
 
 - JDK 17
 - KMS token
-  - This is an API authentication token that is generated when you sign up Doverunner service.
+  - This is an API authentication token that is generated when you sign up DoveRunner service.
 
 
 
@@ -19,7 +19,7 @@
  You can set the parameters of the function based on the packaging scenario you require. 
 
 ```java
-ContentPackagingInfo GetContentKeyInfoFromDoverunnerKMS(String contentId, EnumSet<DrmType> drmTypes, EncryptionScheme encryptionScheme, EnumSet<TrackType> trackTypes, long periodIndex) throws CpixClientException;
+ContentPackagingInfo GetContentKeyInfoFromDoveRunnerKMS(String contentId, EnumSet<DrmType> drmTypes, EncryptionScheme encryptionScheme, EnumSet<TrackType> trackTypes, long periodIndex) throws CpixClientException;
 ```
 
 
@@ -122,7 +122,7 @@ Originally, CPIX Responses are received in XML format, but <u>for readability, r
 | pssh_payload_only (Widevine & PlayReady) | Text value of **`<cpix:ContentProtectionData>`** tag  |
 | key_uri (FairPlay)                       | Text value of **`<cpix:URIExtXKey>`** tag             |
 
-For CPIX Response, please refer to [Doverunner CPIX API Guide](https://doverunner.com/docs/en/multidrm/packaging/cpix-api/).
+For CPIX Response, please refer to [DoveRunner CPIX API Guide](https://doverunner.com/docs/en/multidrm/packaging/cpix-api/).
 
 
 

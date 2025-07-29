@@ -196,7 +196,7 @@ namespace doverunner
 		* @param periodIndex			Period index for key rotation. 
 										Setting a value greater than 0 enables key rotation.
 		*/
-		ContentPackagingInfo GetContentKeyInfoFromDoverunnerKMS(const std::string contentId, DrmType drmType, EncryptionScheme encryptionScheme = NONE, TrackType trackType = ALL_TRACKS, long periodIndex = 0);
+		ContentPackagingInfo GetContentKeyInfoFromDoveRunnerKMS(const std::string contentId, DrmType drmType, EncryptionScheme encryptionScheme = NONE, TrackType trackType = ALL_TRACKS, long periodIndex = 0);
 	};
 }
 

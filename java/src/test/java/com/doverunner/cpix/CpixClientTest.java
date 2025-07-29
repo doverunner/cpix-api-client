@@ -32,12 +32,12 @@ class CpixClientTest {
 	public void setUp() {
 		// Initialize CpixClient with KMS URL
 		String kmsUrl = "https://drm-kms.doverunner.com/v2/cpix/pallycon/getKey/{enc-token}"; // Put your KMS enc-token
-		cpixClient = new DoverunnerCpixClient(kmsUrl);
+		cpixClient = new DoveRunnerCpixClient(kmsUrl);
 	}
 
 	@Test
 	@DisplayName("CPIX Response Output Test")
-	public void testGetContentKeyInfoFromDoverunnerKMS()
+	public void testGetContentKeyInfoFromDoveRunnerKMS()
 		throws CpixClientException, JsonProcessingException {
 		String contentId = ""; // Put your content id
 		EnumSet<DrmType> drmTypes = EnumSet.of(DrmType.WIDEVINE, DrmType.PLAYREADY,
@@ -45,7 +45,7 @@ class CpixClientTest {
 		EncryptionScheme encryptionScheme = EncryptionScheme.NONE;
 		EnumSet<TrackType> trackTypes = EnumSet.of(TrackType.HD, TrackType.SD, TrackType.AUDIO);
 
-		ContentPackagingInfo packagingInfo = cpixClient.GetContentKeyInfoFromDoverunnerKMS(contentId,
+		ContentPackagingInfo packagingInfo = cpixClient.GetContentKeyInfoFromDoveRunnerKMS(contentId,
 			drmTypes, encryptionScheme, trackTypes, 0);
 
 		Assertions.assertNotNull(packagingInfo);

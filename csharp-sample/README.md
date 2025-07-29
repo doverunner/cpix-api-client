@@ -1,6 +1,6 @@
 ---------------------------------------
-# Doverunner CPIX Client Sample for C#
-This sample shows the client code for CPIX communication with Doverunner KMS server in C# language. The sample project uses the C++/CLI Wrapper project, which wraps the CPIX Client C++ library.
+# DoveRunner CPIX Client Sample for C#
+This sample shows the client code for CPIX communication with DoveRunner KMS server in C# language. The sample project uses the C++/CLI Wrapper project, which wraps the CPIX Client C++ library.
 
 
 
@@ -10,7 +10,7 @@ This sample shows the client code for CPIX communication with Doverunner KMS ser
 - Visual Studio 2022 (Windows 10/11)
 - KMS token
 
-  - This is an API authentication token that is generated when you sign up Doverunner service.
+  - This is an API authentication token that is generated when you sign up DoveRunner service.
 
   
 ---------------------------------------
@@ -31,7 +31,7 @@ This sample shows the client code for CPIX communication with Doverunner KMS ser
 You can set the parameters of the function based on the packaging scenario you require.
 
 ```c#
-ContentPackagingInfo GetContentKeyInfosFromDoverunnerKMS(String^ cid, DrmType drmType, EncryptionScheme encryptionScheme, TrackType trackType, long periodIndex);
+ContentPackagingInfo GetContentKeyInfosFromDoveRunnerKMS(String^ cid, DrmType drmType, EncryptionScheme encryptionScheme, TrackType trackType, long periodIndex);
 
 public enum class EncryptionScheme {
     NONE,
@@ -124,7 +124,7 @@ The items of the output data includes all data such as hex encoded, base64 encod
 | pssh_payload_only (Widevine & PlayReady) | Text value of **`<cpix:ContentProtectionData>`** tag  |
 | key_uri (FairPlay)                       | Text value of **`<cpix:URIExtXKey>`** tag             |
 
-For CPIX Response, please refer to [Doverunner CPIX API Guide](https://doverunner.com/docs/en/multidrm/packaging/cpix-api/).
+For CPIX Response, please refer to [DoveRunner CPIX API Guide](https://doverunner.com/docs/en/multidrm/packaging/cpix-api/).
 
 
 

@@ -140,7 +140,7 @@ int main()
 	{
 		// Get packaging information from KMS Server
 		std::shared_ptr<CpixClient> pCpixClient(new CpixClient(kmsUrl));
-		ContentPackagingInfo packInfos = pCpixClient->GetContentKeyInfoFromDoverunnerKMS(contentId, WIDEVINE | PLAYREADY | FAIRPLAY);
+		ContentPackagingInfo packInfos = pCpixClient->GetContentKeyInfoFromDoveRunnerKMS(contentId, WIDEVINE | PLAYREADY | FAIRPLAY);
 
 		// Convert data to JSON
 		std::string strJson = MakeJsonStringFromData(packInfos);

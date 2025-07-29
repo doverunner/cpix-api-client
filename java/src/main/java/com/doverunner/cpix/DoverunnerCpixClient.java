@@ -33,7 +33,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.json.simple.parser.JSONParser;
 
-public class DoverunnerCpixClient implements CpixClient {
+public class DoveRunnerCpixClient implements CpixClient {
 
 	private static final String WIDEVINE_SYSTEM_ID = "EDEF8BA9-79D6-4ACE-A3C8-27DCD51D21ED";
 	private static final String PLAYREADY_SYSTEM_ID = "9A04F079-9840-4286-AB92-E65BE0885F95";
@@ -47,12 +47,12 @@ public class DoverunnerCpixClient implements CpixClient {
 
 	private String kmsUrl;
 
-	public DoverunnerCpixClient(String kmsUrl) {
+	public DoveRunnerCpixClient(String kmsUrl) {
 		this.kmsUrl = kmsUrl;
 	}
 
 	@Override
-	public ContentPackagingInfo GetContentKeyInfoFromDoverunnerKMS(String contentId,
+	public ContentPackagingInfo GetContentKeyInfoFromDoveRunnerKMS(String contentId,
 		EnumSet<DrmType> drmTypes, EncryptionScheme encryptionScheme,
 		EnumSet<TrackType> trackTypes, long periodIndex) throws CpixClientException {
 

@@ -47,9 +47,9 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{0bd40d0f-b400-4083-b634-dfef0bed2b30}</ProjectGuid>
-    <RootNamespace>DoverunnerCpixClient</RootNamespace>
+    <RootNamespace>DoveRunnerCpixClient</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>DoverunnerCpixClient</ProjectName>
+    <ProjectName>DoveRunnerCpixClient</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

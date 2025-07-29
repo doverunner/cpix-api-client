@@ -8,7 +8,7 @@ import com.doverunner.cpix.exception.CpixClientException;
 import java.util.EnumSet;
 
 public interface CpixClient {
-	ContentPackagingInfo GetContentKeyInfoFromDoverunnerKMS(String contentId,
+	ContentPackagingInfo GetContentKeyInfoFromDoveRunnerKMS(String contentId,
 		EnumSet<DrmType> drmTypes, EncryptionScheme encryptionScheme,
 		EnumSet<TrackType> trackTypes, long periodIndex) throws CpixClientException;
 }

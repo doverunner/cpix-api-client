@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Doverunner
+namespace DoveRunner
 {
     class Program
     {
@@ -79,7 +79,7 @@ namespace Doverunner
             try
             {
                 CpixClientWrapper doverunnerCpixClientWrapper = new CpixClientWrapper(kmsUrl);
-                ContentPackagingInfo contentPackagingInfo = doverunnerCpixClientWrapper.GetContentKeyInfoFromDoverunnerKMS(
+                ContentPackagingInfo contentPackagingInfo = doverunnerCpixClientWrapper.GetContentKeyInfoFromDoveRunnerKMS(
                     contentId, DrmType.WIDEVINE | DrmType.PLAYREADY | DrmType.FAIRPLAY, EncryptionScheme.NONE, TrackType.ALL_TRACKS, 0);
 
                 string jsonString = MakeJsonStringFromData(contentPackagingInfo);

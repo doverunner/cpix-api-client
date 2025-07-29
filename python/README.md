@@ -1,6 +1,6 @@
 ---------------------------------------
-# Doverunner CPIX Client for Python
- This module shows the client code for CPIX communication with Doverunner KMS server in Python.
+# DoveRunner CPIX Client for Python
+ This module shows the client code for CPIX communication with DoveRunner KMS server in Python.
 
 
 
@@ -9,7 +9,7 @@
 
 - KMS token
 
-  - This is an API authentication token that is generated when you sign up Doverunner service.
+  - This is an API authentication token that is generated when you sign up DoveRunner service.
 
 - Python 3.9+
 
@@ -142,7 +142,7 @@ In the code of the app_sample.py, if you put the `{enc-token}` and `contentId` v
 | pssh_payload_only (Widevine & PlayReady) | Text value of **`<cpix:ContentProtectionData>`** tag  |
 | key_uri (FairPlay)                       | Text value of **`<cpix:URIExtXKey>`** tag             |
 
-For CPIX Response, please refer to [Doverunner CPIX API Guide](https://doverunner.com/docs/en/multidrm/packaging/cpix-api/).
+For CPIX Response, please refer to [DoveRunner CPIX API Guide](https://doverunner.com/docs/en/multidrm/packaging/cpix-api/).
 
 
 

@@ -1,6 +1,6 @@
 ---------------------------------------
-# Doverunner CPIX Client for C++
- This library shows the client code for CPIX communication with Doverunner KMS server in C++ language.
+# DoveRunner CPIX Client for C++
+ This library shows the client code for CPIX communication with DoveRunner KMS server in C++ language.
 
 
 
@@ -11,7 +11,7 @@
 
 - KMS token
 
-  - This is an API authentication token that is generated when you sign up Doverunner service.
+  - This is an API authentication token that is generated when you sign up DoveRunner service.
 
   
 ---------------------------------------
@@ -39,7 +39,7 @@
 * @param trackType				Track type for multi-key packaging. (e.g. SD|HD|AUDIO)
 *								For single-key packaging, it should be ALL_TRACKS.
 */
-ContentPackagingInfo GetContentKeyInfosFromDoverunnerKMS(const std::string cid, DrmType drmType, EncryptionScheme encryptionScheme = CENC, TrackType trackType = ALL_TRACKS, long periodIndex = 0);
+ContentPackagingInfo GetContentKeyInfosFromDoveRunnerKMS(const std::string cid, DrmType drmType, EncryptionScheme encryptionScheme = CENC, TrackType trackType = ALL_TRACKS, long periodIndex = 0);
 ```
 
 ***EncryptionScheme*** and ***TrackType*** are optional parameters that default to `CENC` and `ALL_TRACKS`(single-key) when nothing is entered.
@@ -138,7 +138,7 @@ In the code of the sample project, if you put the `{enc-token}` and `contentId` 
 | pssh_payload_only (Widevine & PlayReady) | Text value of **`<cpix:ContentProtectionData>`** tag  |
 | key_uri (FairPlay)                       | Text value of **`<cpix:URIExtXKey>`** tag             |
 
-For CPIX Response, please refer to [Doverunner CPIX API Guide](https://doverunner.com/docs/en/multidrm/packaging/cpix-api/).
+For CPIX Response, please refer to [DoveRunner CPIX API Guide](https://doverunner.com/docs/en/multidrm/packaging/cpix-api/).
 
 
 
