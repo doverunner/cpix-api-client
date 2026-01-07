@@ -8,9 +8,9 @@ The API client can be used for 3rd party encoder/transcoder/packager solution in
 
 ## Documentation
 
-- [CPIX API guide document](https://doverunner.com/docs/en/multidrm/packaging/cpix-api/)
-- [DoveRunner Multi-DRM Content Packaging Guide](https://doverunner.com/docs/en/multidrm/packaging/)
+- [CPIX API guide document](https://docs.doverunner.com/content-security/multi-drm/packaging/cpix-api/)
+- [DoveRunner Multi-DRM Content Packaging Guide](https://docs.doverunner.com/content-security/multi-drm/packaging/)
 
 ## Support
 
-If you have any questions or issues with this CPIX API client, please create a ticket at [DoveRunner Helpdesk](https://pallycon.zendesk.com) website.
+If you have any questions or issues with this CPIX API client, please create a ticket at [DoveRunner Helpdesk](https://support.doverunner.com/hc/ko) website.
