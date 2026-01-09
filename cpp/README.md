@@ -1,6 +1,6 @@
 ---------------------------------------
-# PallyCon CPIX Client for C++
- This library shows the client code for CPIX communication with PallyCon KMS server in C++ language.
+# DoveRunner CPIX Client for C++
+ This library shows the client code for CPIX communication with DoveRunner KMS server in C++ language.
 
 
 
@@ -11,13 +11,13 @@
 
 - KMS token
 
-  - This is an API authentication token that is generated when you sign up PallyCon service.
+  - This is an API authentication token that is generated when you sign up DoveRunner service.
 
   
 ---------------------------------------
 ## How to build and test
 1. Clone or download this sample repository.
-2. Open the solution file(*pallycon-cpix-client-cpp.sln*) through Visual Studio 2022.
+2. Open the solution file(*doverunner-cpix-client-cpp.sln*) through Visual Studio 2022.
 3. Enter the `kmsUrl` and `contentId`, build the project, and run the Sample.
 4. If the project runs successfully, it will show the response organized in JSON format on the sample console screen that was run, and also save this JSON data to a file.
 
@@ -31,7 +31,7 @@
 
 ```c++
 /**
-* Receive packaging information from PallyCon KMS server.
+* Receive packaging information from KMS server.
 *
 * @param cid					Content id
 * @param drmType				DRM type. (e.g. WIDEVINE|PLAYREADY|FAIRPLAY)
@@ -39,7 +39,7 @@
 * @param trackType				Track type for multi-key packaging. (e.g. SD|HD|AUDIO)
 *								For single-key packaging, it should be ALL_TRACKS.
 */
-ContentPackagingInfo GetContentKeyInfosFromPallyConKMS(const std::string cid, DrmType drmType, EncryptionScheme encryptionScheme = CENC, TrackType trackType = ALL_TRACKS, long periodIndex = 0);
+ContentPackagingInfo GetContentKeyInfosFromDoveRunnerKMS(const std::string cid, DrmType drmType, EncryptionScheme encryptionScheme = CENC, TrackType trackType = ALL_TRACKS, long periodIndex = 0);
 ```
 
 ***EncryptionScheme*** and ***TrackType*** are optional parameters that default to `CENC` and `ALL_TRACKS`(single-key) when nothing is entered.
@@ -91,6 +91,8 @@ enum TrackType {
 
 ## Output json data format
 
+In the code of the sample project, if you put the `{enc-token}` and `contentId` variable with values and run, you'll see the following results.
+
  The items of the output data includes all data such as hex encoded, base64 encoded, payload_only, etc. so that you can easily copy and paste it into each packaging service.
 
 - **Single-key** sample
@@ -136,7 +138,7 @@ enum TrackType {
 | pssh_payload_only (Widevine & PlayReady) | Text value of **`<cpix:ContentProtectionData>`** tag  |
 | key_uri (FairPlay)                       | Text value of **`<cpix:URIExtXKey>`** tag             |
 
-For CPIX Response, please refer to [PallyCon CPIX API Guide](https://pallycon.com/docs/ko/multidrm/packaging/cpix-api/).
+For CPIX Response, please refer to [DoveRunner CPIX API Guide](https://doverunner.com/docs/en/multidrm/packaging/cpix-api/).
 
 
 
@@ -144,6 +146,6 @@ For CPIX Response, please refer to [PallyCon CPIX API Guide](https://pallycon.co
 
 ## References
 - https://dashif-documents.azurewebsites.net/Cpix/master/Cpix.html
-- https://pallycon.com/docs/en/multidrm/packaging/cpix-api/
+- https://doverunner.com/docs/en/multidrm/packaging/cpix-api/
 
 ---------------------------------------

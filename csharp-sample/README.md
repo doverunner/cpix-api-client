@@ -1,6 +1,6 @@
 ---------------------------------------
-# PallyCon CPIX Client Sample for C#
-This sample shows the client code for CPIX communication with PallyCon KMS server in C# language. The sample project uses the C++/CLI Wrapper project, which wraps the CPIX Client C++ library.
+# DoveRunner CPIX Client Sample for C#
+This sample shows the client code for CPIX communication with DoveRunner KMS server in C# language. The sample project uses the C++/CLI Wrapper project, which wraps the CPIX Client C++ library.
 
 
 
@@ -10,14 +10,14 @@ This sample shows the client code for CPIX communication with PallyCon KMS serve
 - Visual Studio 2022 (Windows 10/11)
 - KMS token
 
-  - This is an API authentication token that is generated when you sign up PallyCon service.
+  - This is an API authentication token that is generated when you sign up DoveRunner service.
 
   
 ---------------------------------------
 ## **How to build and test**
 1. Clone or download this sample repository.
 
-2. Open the solution file(*pallycon-cpix-client-csharp-sample.sln*) through Visual Studio 2022.
+2. Open the solution file(*doverunner-cpix-client-csharp-sample.sln*) through Visual Studio 2022.
 
 3. Enter the `kmsUrl` and `contentId`, build the project, and run the Sample.
 
@@ -31,7 +31,7 @@ This sample shows the client code for CPIX communication with PallyCon KMS serve
 You can set the parameters of the function based on the packaging scenario you require.
 
 ```c#
-ContentPackagingInfo GetContentKeyInfosFromPallyConKMS(String^ cid, DrmType drmType, EncryptionScheme encryptionScheme, TrackType trackType, long periodIndex);
+ContentPackagingInfo GetContentKeyInfosFromDoveRunnerKMS(String^ cid, DrmType drmType, EncryptionScheme encryptionScheme, TrackType trackType, long periodIndex);
 
 public enum class EncryptionScheme {
     NONE,
@@ -76,6 +76,8 @@ If you want to enable key rotation, you can set `key-rotation=true` to the Get p
 ---------------------------------------
 
 ## **Output json data format**
+
+In the code of the sample project, if you put the `{enc-token}` and `contentId` variable with values and run, you'll see the following results.
 
 The items of the output data includes all data such as hex encoded, base64 encoded, payload_only, etc. so that you can easily copy and paste it into each packaging service.
 
@@ -122,7 +124,7 @@ The items of the output data includes all data such as hex encoded, base64 encod
 | pssh_payload_only (Widevine & PlayReady) | Text value of **`<cpix:ContentProtectionData>`** tag  |
 | key_uri (FairPlay)                       | Text value of **`<cpix:URIExtXKey>`** tag             |
 
-For CPIX Response, please refer to [PallyCon CPIX API Guide](https://pallycon.com/docs/ko/multidrm/packaging/cpix-api/).
+For CPIX Response, please refer to [DoveRunner CPIX API Guide](https://doverunner.com/docs/en/multidrm/packaging/cpix-api/).
 
 
 
@@ -130,8 +132,7 @@ For CPIX Response, please refer to [PallyCon CPIX API Guide](https://pallycon.co
 
 ## References
 
-- [PallyCon CPIX Client Sample for C++](https://github.com/inka-pallycon/pallycon-cpix-api-client/tree/main/cpp)
 - https://dashif-documents.azurewebsites.net/Cpix/master/Cpix.html
-- https://pallycon.com/docs/en/multidrm/packaging/cpix-api/
+- https://doverunner.com/docs/en/multidrm/packaging/cpix-api/
 
 ---------------------------------------
