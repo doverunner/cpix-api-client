@@ -39,13 +39,13 @@ def make_json_string_from_data(pack_info):
 
 
 def main():
-    kms_url = "https://kms.pallycon.com/v2/cpix/pallycon/getKey/{enc-token}" # Put your KMS enc-token
+    kms_url = "https://drm-kms.doverunner.com/v2/cpix/pallycon/getKey/{enc-token}" # Put your KMS enc-token
     content_id = ""  # Put your content id
 
     try:
-        # Get the packaging information from PallyCon KMS Server
+        # Get the packaging information from KMS Server
         cpix_client = CpixClient(kms_url)
-        pack_info = cpix_client.get_content_key_info_from_pallycon_kms(
+        pack_info = cpix_client.get_content_key_info_from_doverunner_kms(
             content_id, DrmType.WIDEVINE | DrmType.PLAYREADY | DrmType.FAIRPLAY)
 
         # Convert data to JSON

@@ -1,6 +1,6 @@
 ---------------------------------------
-# PallyCon CPIX Client for Java
- This module shows the client code for CPIX communication with PallyCon KMS server in Java.
+# DoveRunner CPIX Client for Java
+ This module shows the clien code for CPIX communication with DoveRunner KMS server in Java.
 
 
 
@@ -9,7 +9,7 @@
 
 - JDK 17
 - KMS token
-  - This is an API authentication token that is generated when you sign up PallyCon service.
+  - This is an API authentication token that is generated when you sign up DoveRunner service.
 
 
 
@@ -19,7 +19,7 @@
  You can set the parameters of the function based on the packaging scenario you require. 
 
 ```java
-ContentPackagingInfo GetContentKeyInfoFromPallyConKMS(String contentId, EnumSet<DrmType> drmTypes, EncryptionScheme encryptionScheme, EnumSet<TrackType> trackTypes, long periodIndex) throws CpixClientException;
+ContentPackagingInfo GetContentKeyInfoFromDoveRunnerKMS(String contentId, EnumSet<DrmType> drmTypes, EncryptionScheme encryptionScheme, EnumSet<TrackType> trackTypes, long periodIndex) throws CpixClientException;
 ```
 
 
@@ -77,6 +77,8 @@ Originally, CPIX Responses are received in XML format, but <u>for readability, r
 
  The items of the output data includes all data such as hex encoded, base64 encoded, payload_only, etc. so that you can easily copy and paste it into each packaging service.
 
+ In the test code, if you put the `{enc-token}` and `contentId` variable with values and run, you'll see the following results.
+
 - **Single-key** sample
 
 ```json
@@ -120,7 +122,7 @@ Originally, CPIX Responses are received in XML format, but <u>for readability, r
 | pssh_payload_only (Widevine & PlayReady) | Text value of **`<cpix:ContentProtectionData>`** tag  |
 | key_uri (FairPlay)                       | Text value of **`<cpix:URIExtXKey>`** tag             |
 
-For CPIX Response, please refer to [PallyCon CPIX API Guide](https://pallycon.com/docs/ko/multidrm/packaging/cpix-api/).
+For CPIX Response, please refer to [DoveRunner CPIX API Guide](https://doverunner.com/docs/en/multidrm/packaging/cpix-api/).
 
 
 
@@ -128,6 +130,6 @@ For CPIX Response, please refer to [PallyCon CPIX API Guide](https://pallycon.co
 
 ## References
 - https://dashif-documents.azurewebsites.net/Cpix/master/Cpix.html
-- https://pallycon.com/docs/en/multidrm/packaging/cpix-api/
+- https://doverunner.com/docs/en/multidrm/packaging/cpix-api/
 
 ---------------------------------------
